@@ -1,0 +1,19 @@
+[Unit]
+Description=Gunicorn instance for Contractor Checker
+After=network.target postgresql.service
+
+[Service]
+User=cubinez85
+Group=www-data
+WorkingDirectory=/var/www/contractor_checker
+Environment="PATH=/var/www/contractor_checker/venv/bin"
+EnvironmentFile=/var/www/contractor_checker/.env
+ExecStart=/var/www/contractor_checker/venv/bin/gunicorn \
+          --workers 3 \
+          --bind 127.0.0.1:8000 \
+          --access-logfile /var/www/contractor_checker/logs/access.log \
+          --error-logfile /var/www/contractor_checker/logs/error.log \
+          run:app
+
+[Install]
+WantedBy=multi-user.target
