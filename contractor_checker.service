@@ -5,14 +5,14 @@ After=network.target postgresql.service
 [Service]
 User=cubinez85
 Group=www-data
-WorkingDirectory=/var/www/contractor_checker
-Environment="PATH=/var/www/contractor_checker/venv/bin"
-EnvironmentFile=/var/www/contractor_checker/.env
-ExecStart=/var/www/contractor_checker/venv/bin/gunicorn \
+WorkingDirectory=/home/cubinez85/contractor_checker/general
+Environment="PATH=/home/cubinez85/contractor_checker/general/venv/bin"
+EnvironmentFile=/home/cubinez85/contractor_checker/general/.env
+ExecStart=/home/cubinez85/contractor_checker/general/venv/bin/gunicorn \
           --workers 3 \
-          --bind 127.0.0.1:8000 \
-          --access-logfile /var/www/contractor_checker/logs/access.log \
-          --error-logfile /var/www/contractor_checker/logs/error.log \
+          --bind 127.0.0.1:8083 \
+          --access-logfile /home/cubinez85/contractor_checker/general/logs/access.log \
+          --error-logfile /home/cubinez85/contractor_checker/general/logs/error.log \
           run:app
 
 [Install]
