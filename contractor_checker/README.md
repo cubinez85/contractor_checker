@@ -124,8 +124,8 @@ Flask-Admin предоставляет:
 
 ```bash
 # Клонирование проекта
-git clone https://github.com/your-repo/contractor-checker.git /var/www/contractor_checker
-cd /var/www/contractor_checker
+cd ~
+git clone https://github.com/your-repo/contractor-checker.git 
 
 # Настройка окружения
 python3 -m venv venv
