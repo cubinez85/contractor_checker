@@ -144,6 +144,8 @@ cp .env.example .env
 nano .env  # Отредактируйте под свои параметры
 
 # Инициализация базы данных
+flask db init
+flask db migrate -m "Initial migration"
 flask db upgrade
 
 # Настройка Nginx и systemd
