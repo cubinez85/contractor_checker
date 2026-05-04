@@ -157,3 +157,10 @@ IndentationError: expected an indented block after function definition on line 1
 [2026-05-04 09:04:50 +0300] [399] [INFO] Booting worker with pid: 399
 [2026-05-04 09:04:50 +0300] [400] [INFO] Booting worker with pid: 400
 [2026-05-04 09:04:50 +0300] [401] [INFO] Booting worker with pid: 401
+[2026-05-04 15:48:23 +0300] [336] [INFO] Starting gunicorn 25.1.0
+[2026-05-04 15:48:23 +0300] [336] [INFO] Listening at: http://127.0.0.1:8083 (336)
+[2026-05-04 15:48:23 +0300] [336] [INFO] Using worker: sync
+[2026-05-04 15:48:23 +0300] [336] [INFO] Control socket listening at /home/cubinez85/contractor_checker/general/gunicorn.ctl
+[2026-05-04 15:48:23 +0300] [386] [INFO] Booting worker with pid: 386
+[2026-05-04 15:48:23 +0300] [387] [INFO] Booting worker with pid: 387
+[2026-05-04 15:48:23 +0300] [388] [INFO] Booting worker with pid: 388
