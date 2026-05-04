@@ -3,3 +3,7 @@ __pycache__/
 migrations/
 venv/
 app/__pycache__/
+reports/*
+logs/*
+!reports/.gitkeep
+!logs/.gitkeep
